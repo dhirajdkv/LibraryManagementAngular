@@ -1,0 +1,51 @@
+
+<div class="container">
+  <app-banner></app-banner>
+  <div class="row text-right">
+    <div class="col-lg-12">
+      <!-- <button class="btn btn-primary" (click)="displayCard()" *ngIf="disableOffer4 == false">Add Card</button> -->
+      <!-- <button class="btn btn-primary" (click)="displayCard()" *ngIf="disableOffer4 == true">Remove Card</button> -->
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <a routerLink="addbook" class="btn btn-primary">Add Book</a>
+    </div>
+  </div><hr>
+  <div class="row text-center">
+    <div class="col-lg-4 col-md-4 mb-4"  *ngFor = "let ele of arrayData">
+        <app-card [cardDetails]="ele"></app-card>
+    </div>    
+  </div>
+
+  <!-- <div class="row">
+    <div class="col-lg-12">
+      <div class="row">
+        <div class="col-lg-6">
+            <h3 [ngClass]="{'red-class':listData.length > 5}">All Profiles - {{listData.length}}</h3>
+        </div>
+        <div class="col-lg-6 text-right">
+          <button class="btn btn-xs btn-success" (click)="addList()">Add List</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-12">
+      <div class="row">
+        <input type="text" class="form-control" [(ngModel)]="filterValue">
+      </div>
+    </div>
+    <div class="col-lg-12">
+      <ul class="list-unstyled">
+        <li class="media" *ngFor="let element of listData | filter:filterValue">
+          <img src="http://placehold.it/50x50" class="mr-3" alt="...">
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">{{element.title}}</h5>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div> -->
+
+
+</div>

@@ -1,0 +1,10 @@
+<div class="card bg-white shadow p-3 mb-5 rounded">
+  <img class="card-img-top" [src]="cardDetails.coverImage" height="250px" width="100px"alt="">
+  <div class="card-body">
+    <h4 class="card-title">{{cardDetails.title}}</h4>
+    <p class="card-text">{{cardDetails.description}}<br>{{cardDetails.author}}</p>
+  </div>
+  <div class="card-footer">
+    <a routerLink="blog/{{cardDetails.id}}" class="btn btn-primary">Click Here!</a>
+  </div>
+</div>

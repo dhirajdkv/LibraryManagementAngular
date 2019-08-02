@@ -1,0 +1,63 @@
+<form name="sentMessage" id="contactForm" (submit)="myFunc(title.value,author.value,ISBN.value,price.value,ratting.value,department.value,description.value)">
+  <div class="control-group">
+    <div class="form-group floating-label-form-group controls">
+      <label>Title</label>
+      <input type="text" class="form-control" #title [value]="arrayData.title">
+      <!-- <p class="help-block text-danger"></p> -->
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="form-group floating-label-form-group controls">
+      <label>Author</label>
+      <input type="text" class="form-control" #author [value]="arrayData.author">
+      <!-- <p class="help-block text-danger"></p> -->
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="form-group col-xs-12 floating-label-form-group controls">
+      <label>ISBN</label>
+      <input type="text" class="form-control" #ISBN  [value]="arrayData.ISBN">
+      <!-- <p class="help-block text-danger"></p> -->
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="form-group col-xs-12 floating-label-form-group controls">
+      <label>Price</label>
+      <input type="text" class="form-control" #price  [value]="arrayData.price">
+      <!-- <p class="help-block text-danger"></p> -->
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="form-group col-xs-12 floating-label-form-group controls">
+      <label>Rating</label>
+      <input type="text" class="form-control" #ratting  [value]="arrayData.ratting">
+      <!-- <p class="help-block text-danger"></p> -->
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="form-group col-xs-12 floating-label-form-group controls">
+      <label>Department</label>
+      <input type="text" class="form-control" #department  [value]="arrayData.department">
+      <!-- <p class="help-block text-danger"></p> -->
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="form-group floating-label-form-group controls">
+      <label>Description</label>
+      <textarea rows="3" class="form-control" #description  [value]="arrayData.description"></textarea>
+      <!-- <p class="help-block text-danger"></p> -->
+    </div>
+  </div>
+  <!-- <div class="control-group">
+    <div class="form-group col-xs-12 floating-label-form-group controls">
+      <label>Book Image</label>
+      <img [src]="arrayData.coverImage" alt="">
+      <p class="help-block text-danger"></p>
+    </div>
+  </div> -->
+  <br>
+  <!-- <div #success></div> -->
+  <div class="form-group">
+    <button type="submit" class="btn btn-primary">Update</button>
+  </div>
+</form>

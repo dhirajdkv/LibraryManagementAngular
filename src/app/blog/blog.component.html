@@ -1,0 +1,31 @@
+<div class="container">
+
+  <div class="row">
+
+    <!-- Post Content Column -->
+    <div class="col-lg-8">
+
+      <!-- Title -->
+      <h1 class="mt-4">{{arrayData.id}}</h1>
+      <h2>{{arrayData.title}}</h2>
+      <img [src]="arrayData.coverImage" alt="">
+      <!-- Author -->
+      <p class="lead">
+        by
+        <a routerLink="">{{arrayData.author}}</a>
+      </p>
+
+      <hr>
+
+      <!-- Date/Time -->
+      <p>Posted on {{arrayData.createdAt}}</p>
+      <p>Description : {{arrayData.description}}</p>
+      <p>Department : {{arrayData.department}}</p>
+      <p>ISBN : {{arrayData.ISBN}}</p>
+      <p>Price : {{arrayData.price}}</p>
+      <p>Rating : {{arrayData.ratting}}</p>
+      <hr>
+      </div>
+      </div>
+      </div>
+      

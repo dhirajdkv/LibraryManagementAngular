@@ -1,0 +1,32 @@
+ <table class="table table-striped table-dark">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Title</th>
+      <th scope="col">author</th>
+      <th scope="col">department</th>
+      <th scope="col">description</th>
+      <th scope="col">ISBN</th>
+      <th scope="col">price</th>
+      <th scope="col">ratting</th>
+      <th scope="col">Cover</th>
+      <th scope="col">Edit / Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let ele of arrayData">
+      <th scope="row">{{ele.id}}</th>
+      <!-- <td>{{ele.id}}</td> -->
+      <td>{{ele.title}}</td>
+      <td>{{ele.author}}</td>
+      <td>{{ele.department}}</td>
+      <td>{{ele.description}}</td>
+      <td>{{ele.ISBN}}</td>
+      <td>{{ele.price}}</td>
+      <td>{{ele.ratting}}</td>
+      <td><img [src]="ele.coverImage" alt="" height="100px" width="100px"></td>
+      <td><a routerLink="edit/{{ele.id}}" class="btn btn-primary btn-sm">Edit</a>
+      <button class="btn btn-danger btn-sm" (click)="myFunc(ele.id)">Delete</button></td>
+    </tr>
+    </tbody>
+    </table>
